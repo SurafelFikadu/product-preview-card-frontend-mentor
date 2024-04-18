@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.img-mobile {
+    display: none;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.left {
+    max-width: 300px;
+    padding: 30px;
+}
+
+.img-desktop {
+    max-width: 300px;
+    border-radius: 12px 0px 0px 12px;
+    width: fit-content;
+}
+
+.Perfume {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-family: "Fraunce", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.para {
+    font-family: "Montserrat", sans-serif;
+    line-height: 18px;
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 30px;
+}
+
+.cash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.cash-1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.cash-2 {
+    color: hsl(158, 36%, 37%);
+}
+
+hr {
+    margin-top: -10px;
+}
+
+.x-cash {
+    margin-top: -8px;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.img-cart {
+    width: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 599px) {
+    .img-mobile {
+        display: block;
+        width: 375px;
+        border-radius: 12px 12px 0 0px;
+    }
+
+    body {
+        margin: 30px;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .left {
+        padding: 25px;
+    }
+
+    h1 {
+        width: 375px;
+    }
+
+    .para {
+        width: 290px;
+    }
+
+    button {
+        width: 130%;
+    }
+}
