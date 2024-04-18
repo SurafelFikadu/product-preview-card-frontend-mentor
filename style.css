@@ -23,6 +23,8 @@ main {
     display: flex;
     border-radius: 12px;
     width: fit-content;
+    width: 600px;
+    height: 450px;
 }
 
 .left {
@@ -33,7 +35,6 @@ main {
 .img-desktop {
     max-width: 300px;
     border-radius: 12px 0px 0px 12px;
-    width: fit-content;
 }
 
 .Perfume {
